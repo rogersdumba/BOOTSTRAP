@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .nav-item {
+          padding-right: 34px;
+          font-weight: bold;
+        }
+      section {
+        background-image: url(merr.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .navbar {
+        background-image: url(merr.png);
+      }
+      .bx {
+        font-size: 40px;
+        padding-top: 4px;
+        padding-left: 4px;
+        color: #198754;
+    }
+     .card {
+      width: 20rem;
+      padding: 8px;
+      margin-top: 45px;
+      margin-right: 16px;
+      border: #198754 2px solid;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .content-container {
+      margin-top: 10%;
+      margin-left: 20%;
+    }
+    h4 {
+      font-weight: bolder;
+      color:#198754;
+    }
+    .accordion {
+    border: 1px solid green;
+    border-radius: 5px; 
+    padding: 10px; 
+  }
+    .accordion-button::after {
+    display: none !important;
+    }
+    .accordion-item {
+    border: 1px solid #198754;
+  }       
+      #lat {
+    position: relative;
+    bottom:  106px; 
+}
+    </style>
+</head>
+<body>
+    <!--Nav-Bar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid ">
+          <a class="navbar-brand ms-5 fw-bold text-success" href="#">ROGERS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center p-2" id="navbarNav">
+            <ul class="navbar-nav" >
+              <li class="nav-item">
+                <a class="nav-link active text-success" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-success" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-success" href="#skills">My Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-success" href="#port">My Portfolio</a>
+              </li>
+            </ul>
+          </div>
+          <a class="btn btn-success d-none d-md-inline me-5 fw-bold" href="#">Get In Touch</a>
+        </div>
+      </nav>
+    <section class="hero">
+      <div class="container ">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6 text-center">
+            <h1 class="display-2 fw-bold text-success mt-4">Hi, I'm Rogers</h1>
+            <img class="img-fluid" src="byrrr.png" alt="rogers"> 
+            <button class="btn btn-sm-30 fw-bold text-success d-md-inline d-sm-none bg-white" id="lat">Talk to Me</button>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!--What you have to know-->
+    <section class="cards">
+      <div style="display: flex; justify-content: center; flex-direction: row;">
+      <div class="card">
+        <i class='bx bxs-bulb bx-flashing-hover'></i>
+        <div class="card-body">
+          <h4>Refined skillset</h4>
+          <p class="card-text">This signifies my high level of proficiency, often attained through extensive experience, training, and continuous learning.</p>
+        </div>
+      </div>
+      <div class="card">
+        <i class='bx bxs-spa bx-flashing-hover ms-2'></i>
+        <div class="card-body">
+          <h4>Creative Work</h4>
+          <p class="card-text">From coding elegant websites to crafting efficient software, I thrive on turning complex ideas into functional, user-friendly products.</p>
+        </div>
+      </div>
+      <div class="card">
+        <i class='bx bxs-book-reader bx-flashing-hover ms-2'></i>
+        <div class="card-body">
+          <h4>Strong Dedication</h4>
+          <p class="card-text">My commitment to going above and beyond in every task I undertake. It's about putting in the extra effort and staying focused.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <!--About Me-->
+  <section class="about-me pt-3">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-6">
+          <div class="content-container">
+            <h1 class="fw-bold text-success fw-bold">About Me</h1>
+           <p class="text-black">I am a proficient website developer currently undertaking my nano-degree program at IU International University of Applied Sciences. With a strong foundation in website development, I am committed to advancing my skills and expertise in the field. I am dedicated to leveraging my education and experience to contribute effectively to innovative projects and drive impactful solutions in the ever-evolving realm of technology.</p>
+           <button class="btn btn-success">Contact Me</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img class="img-fluid" src="byr.png" alt="rogers" style="width: 80%; height: auto;">
+        </div>
+      </div>
+    </div>
+  </section>
+ <!--My skills-->
+ <section class="my-skills pb-5">
+  <h1 class="text-center pt-5 pb-3 text-success fw-bold">My Skills</h1>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-5">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" disabled>
+                  <i class='bx bx-code-alt bx-flashing-hover'></i><span class="ms-2 fw-bold">HTML & CSS</span> 
+                </button>                
+              </h2>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed"type="button" disabled>
+                  <i class='bx bxl-bootstrap bx-flashing-hover' ></i></i><span class="ms-2 fw-bold">BOOTSTRAP</span> 
+                </button>
+              </h2>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" disabled>
+                  <i class='bx bxl-javascript bx-flashing-hover'></i><span class="ms-2 fw-bold">JAVASCRIPT</span> 
+                </button>
+              </h2>
+            </div>
+          </div>
+        </div>
+    <div class="col-md-5">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" disabled>
+              <i class='bx bxl-wordpress bx-flashing-hover'></i><span class="ms-2 fw-bold">WORDPRESS</span> 
+            </button>
+          </h2>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" disabled>
+              <i class='bx bxs-component bx-flashing-hover'></i><span class="ms-2 fw-bold">FLUTTERFLOW</span> 
+            </button>
+          </h2>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" disabled>
+              <i class='bx bxs-cookie bx-flashing-hover' ></i><span class="ms-2 fw-bold">FIGMA & CANVA</span> 
+            </button>
+          </h2> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </section> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
