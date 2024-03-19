@@ -43,7 +43,7 @@
       color:#198754;
     }
     .accordion {
-    border: 1px solid green;
+    border: 1px solid #198754;
     border-radius: 5px; 
     padding: 10px; 
   }
@@ -54,11 +54,19 @@
     border: 1px solid #198754;
   } 
    .green-border {
-  border: 2px solid green;
+  border: 2px solid #198754;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
+   .nav-links {
+  border: 2px solid transparent !important;
+   }
+   .nav-links.active {
+   background-color:#198754 !important;
+   color: white !important;
+   border: 2px solid #198754 !important;
+  }
       
       #lat {
     position: relative;
@@ -208,17 +216,17 @@
   </section> 
   <!--Portfolio-->
   <section class="portfoliio text-center pb-5" id="port">
-    <h1 class="text-center pt-5 text-success fw-bold">My Portfolio</h1>
+    <h1 class="text-center pt-4 text-success fw-bold">My Portfolio</h1>
     <p class="pb-4  fw-bold">Special thanks to Remote-Squad for their invaluable support and guidance.</p>
     <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
       <li class="nav-item " role="presentation">
-        <button class="nav-link active text-success fw-bold" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">All Projects</button>
+        <button class="nav-links active text-success fw-bold" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">All Projects</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link text-success fw-bold" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Website Projects</button>
+        <button class="nav-links text-success fw-bold" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Website Projects</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link text-success fw-bold" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">UI/UX Designs</button>
+        <button class="nav-links text-success fw-bold" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">UI/UX Designs</button>
       </li>
     </ul>
     <div class="tab-content" id="myTabContent">
